@@ -19,3 +19,13 @@ Résultat : FOREIGN KEY constraint failed
 contient les instructions CREATE TABLE des deux tables categories et produits 
 1.8)
 pour éviter les conflits
+
+2.1)
+sqflite : permet d'utiliser une base sqlite
+path : construit des chemins de fichier
+sqflite_common_ffi : fait fonctionner la même API sqflite sur desktop
+
+2.2)
+id est int? car la base le crée : avant l'insertion, il vaut null.
+
+toMap() n'ajoute id que s'il existe : sans id, la base le génère (INSERT).
